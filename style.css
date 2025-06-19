@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Banner */
+.banner {
+    background-image: url('banner.jpg');
+    /* Troque 'banner.jpg' pela sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.banner p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Descrição */
+.descricao {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+}
+
+/* Lista de Mods */
+.lista-mods {
+    max-width: 800px;
+    margin: 20px auto 50px;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+}
+
+.lista-mods ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-mods li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.lista-mods li:last-child {
+    border-bottom: none;
+}
+
+.lista-mods li:hover {
+    transform: scale(1.05);
+    /* aumenta 5% */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    background-color: #3a3a3a;
+}
+
+.lista-mods li a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.lista-mods li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+.mod-icon {
+    width: 32px;
+    /* tamanho do ícone */
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 10px;
+    /* espaço entre a imagem e o texto */
+    border-radius: 5px;
+    /* cantos arredondados, opcional */
+    object-fit: cover;
+    /* para a imagem ficar bem ajustada */
+}
+
+.lista-mods li {
+    position: relative;
+    /* importante para o posicionamento da descrição */
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.lista-mods li:last-child {
+    border-bottom: none;
+}
+
+.lista-mods li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    background-color: #3a3a3a;
+}
+
+/* estilo do link */
+.lista-mods li a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+    flex-grow: 1;
+    z-index: 2;
+    /* para ficar acima da descrição */
+    position: relative;
+}
+
+.lista-mods li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* descrição escondida */
+.descricao-mod {
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    /* desloca para a direita do bloco */
+    transform: translateY(-50%) scale(0);
+    transform-origin: left center;
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 5;
+}
+
+/* mostrar descrição ao passar o mouse no li */
+.lista-mods li:hover .descricao-mod {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-50%) scale(1);
+}
