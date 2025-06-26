@@ -5,12 +5,10 @@ body {
     color: #ffffff;
 }
 
+@import url(background.css);
+@import url(header.css);
 /* Banner */
 .banner {
-    background-image: url('banner.jpg');
-    /* Troque 'banner.jpg' pela sua imagem */
-    background-size: cover;
-    background-position: center;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -135,29 +133,90 @@ body {
     color: #fff;
 }
 
-/* descrição escondida */
 .descricao-mod {
-    position: absolute;
-    top: 50%;
-    left: 105%;
-    /* desloca para a direita do bloco */
-    transform: translateY(-50%) scale(0);
-    transform-origin: left center;
-    background-color: #444;
+    display: none;
+    margin-top: 10px;
+    background-color: #000;
     color: #fff;
     padding: 10px;
-    width: 250px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    z-index: 5;
+    animation: slideDown 0.3s ease forwards;
+    white-space: pre-wrap;
+    width: 100%;
 }
 
-/* mostrar descrição ao passar o mouse no li */
-.lista-mods li:hover .descricao-mod {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(-50%) scale(1);
+
+.lista-mods li.expanded .descricao-mod {
+    display: block;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mantém o efeito de crescimento ao passar o mouse */
+.lista-mods li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    background-color: #3a3a3a;
+}
+
+.amor {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    /* desce o título */
+}
+
+.titulo img {
+    width: 80%;
+    max-width: 700px;
+    transform-style: preserve-3d;
+    animation: efeito3D 3s infinite ease-in-out;
+    transform-origin: center;
+}
+
+/* Animação 3D: inclinação + rotação + profundidade */
+@keyframes efeito3D {
+    0% {
+        transform: rotateX(15deg) rotateY(-10deg) scale(1);
+    }
+
+    50% {
+        transform: rotateX(0deg) rotateY(10deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotateX(15deg) rotateY(-10deg) scale(1);
+    }
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
 }
