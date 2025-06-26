@@ -1,15 +1,16 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Minecraft', sans-serif;
     background-color: #1e1e1e;
     color: #ffffff;
 }
 
 @import url(background.css);
 @import url(header.css);
+
 /* Banner */
 .banner {
-    height: 300px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,8 +33,8 @@ body {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #2c2c2c;
     border-radius: 10px;
+    background-color: #383838;
 }
 
 /* Lista de Mods */
@@ -41,7 +42,6 @@ body {
     max-width: 800px;
     margin: 20px auto 50px;
     padding: 20px;
-    background-color: #2c2c2c;
     border-radius: 10px;
 }
 
@@ -136,15 +136,19 @@ body {
 .descricao-mod {
     display: none;
     margin-top: 10px;
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(135deg, #000000, #252525);
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
     animation: slideDown 0.3s ease forwards;
     white-space: pre-wrap;
     width: 100%;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
 }
+
 
 
 .lista-mods li.expanded .descricao-mod {
@@ -211,7 +215,7 @@ body {
     }
 }
 
-#app{
+#app {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,4 +223,179 @@ body {
     width: 100%;
     height: 100%;
 
+}
+
+.container {
+    max-width: 800px;
+    text-align: center;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #a259ff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.alerta {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.emoji {
+    font-size: 1.5em;
+}
+
+
+.ip-container {
+    margin-top: 10px;
+    background-color: #2c2c2c;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#ip-text {
+    font-weight: bold;
+    color:#1ae1e18d;
+    font-size: 1.1em;
+}
+
+#copy-btn {
+    background-color: #1ae1e18d;
+    color: #000;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#copy-btn:hover {
+    background-color: #17c9c9;
+}
+
+#copiado-msg {
+    color: #ffffff;
+    font-weight: bold;
+    animation: fadeInOut 2s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ip-box {
+    background: linear-gradient(135deg, #00000093, #282728b4);
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    color: #333;
+    font-family: 'Minecraft', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.ip-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+.copiado-msg {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c25afa;
+    color: #000;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-weight: 600;
+    animation: fadeInOut 2s ease;
+    display: none;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fotos {
+    max-width: 68%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.galeria-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.galeria-imagens img {
+    width: 500px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.galeria-imagens img:hover {
+    transform: scale(1.03);
 }

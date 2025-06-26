@@ -53,3 +53,15 @@ header {
     transform: scaleX(1);
     transform-origin: left;
 }
+
+footer {
+    background-color: var(--bg-card);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid var(--border);
+}
+
+.personas {
+    max-width: 10px;
+}

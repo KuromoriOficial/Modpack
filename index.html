@@ -11,21 +11,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
+
 </head>
 
 <body>
+
+
     <div id="app">
         <header>
             <div class="navigation-wrapper">
                 <ul class="navigation">
-                    <li><a href="#" class="navigation_link">Home</a></li>
-                    <li><a href="#" class="navigation_link">Sobre o ModPack</a></li>
-                    <li><a href="#" class="navigation_link">Participe</a></li>
-                    <li><a href="#" class="navigation_link">Lista de Mods</a></li>
-                    <li><a href="#" class="navigation_link">Mais informações</a></li>
+                    <li><a href="#home" class="navigation_link">Home</a></li>
+                    <li><a href="#facmod" class="navigation_link">Sobre o ModPack</a></li>
+                    <li><a href="#part" class="navigation_link">Participe</a></li>
+                    <li><a href="#modsss" class="navigation_link">Lista de Mods</a></li>
+                    <li><a href="#agrade" class="navigation_link">Mais informações</a></li>
                 </ul>
             </div>
-        </header>
+        </header id="home">
         <section class="titulo">
             <img src="./arquives/titulus.png">
 
@@ -40,27 +44,60 @@
 
 
     <!-- Banner principal -->
-    <header class="banner">
-        <p>[⚒️em desenvolvimento⚒️]</p>
+    <header class="banner" id="facmod">
+        <div class="container">
+            <p>Todos os anos, nossa comunidade se reúne para celebrar uma tradição única no Minecraft: o <strong>Evento
+                    Wither Storm</strong>. Já estamos na <strong>3ª edição</strong> dessa jornada épica, marcada por um
+                modpack totalmente <strong>personalizado</strong>, criado com base nos desejos e sugestões de nossos
+                membros.</p>
+            <p>Com um <strong>servidor 24/7 sempre online</strong>, o evento é <strong>aberto a todos</strong> que
+                buscam viver aventuras intensas, explorar novos mundos e mergulhar em uma experiência colaborativa e
+                inesquecível.</p>
+            <p class="alerta">⚠️ Na edição anterior, enfrentamos um desafio: o mod do Wither Storm apresentava falhas,
+                desaparecendo do mundo e prejudicando a experiência de jogo. Após debate com a comunidade, decidimos
+                <strong>remover temporariamente o mod</strong>, preservando a essência do evento enquanto aguardamos
+                futuras atualizações.⚠️
+            </p>
+            <p>Mesmo assim, o espírito do <strong>Wither Storm</strong> continua vivo — ele permanece como <strong>nome
+                    e base</strong> do modpack, um verdadeiro símbolo de força, união e diversão entre amigos. E quando
+                o mod estiver pronto para retornar... podem ter certeza: <em>a tempestade vai rugir mais forte do que
+                    nunca</em>.</p>
+        </div>
+    </header>
+    <section class="fotos">
+        <div class="galeria-imagens">
+            <img src="./arquives/foto1.png" alt="Imagem 1">
+            <img src="./arquives/foto2.png" alt="Imagem 2">
+            <img src="./arquives/foto3.png" alt="Imagem 3">
+            <img src="./arquives/foto4.png" alt="Imagem 4">
+        </div>
+    </section>
+
+    <header class="banner" id="part">
+        <div class="container">
+            <p>Como dito anteriormente, <strong>todos estão convidados</strong> para embarcar nessa aventura. O evento é
+                <strong>aberto ao público</strong> e pensado para reunir a comunidade em torno de uma experiência única
+                no Minecraft.
+            </p>
+
+            <p>O servidor é <strong>compatível com qualquer versão</strong> do Minecraft 1.20.5 – seja ela original ou
+                falsificada – contanto que esteja com o <strong>Forge instalado</strong>.</p>
+            <p>Utilize o código de dowload do CurseForge ou
+                <a href="https://www.mediafire.com/file/mdwgiz9pzn7fzcl/mods.rar/file" style="color: #1ae1e18d">baixe o
+                    arquivo do modpack.</a>
+            </p>
+            <p> Para jogar basta instalar o modpack, instalar o Forge e entrar no server com
+                o IP abaixo:</p>
+            <div class="ip-box" id="ip-box">
+                <span class="ip-text" id="ip-text">🌐 enx-cirion-11.enx.host:10031</span>
+                <span class="copiado-msg" id="copiado-msg">Copiado!</span>
+            </div>
+
+        </div>
     </header>
 
-    <section class="amor">
-        <a href="https://www.mediafire.com/file/rdea0wq4s8vhgpa/mods.rar/file" style="color: #1ae1e18d">[clique aqui
-            para baixar o arquivo dos mods]</a>
-        <h2>Minecraft 1.20.5 - Forge</h2>
-    </section>
-
-    <!-- Descrição do Modpack -->
-    <section class="descricao">
-        <h2>Para novatos que não sabem oque é o evento 'Wither Storm', básicamente se trata de um evento em que durante
-            1 mês abrimos um servidor com um modpack unico onde permite a todos terem uma experiencia inovadora e unica.
-            Este é a 3 edição do evento do 'WitherStorm'</h2>
-        <p>
-            .
-        </p>
-    </section>
-
     <!-- Lista de Mods -->
+    <header id="modsss"></header>
     <section class="lista-mods">
         <h2>Mods Inclusos</h2>
         <ul>
@@ -955,48 +992,54 @@
                 </div>
             </li>
 
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/1289/817/64/64/638838549850518521_animated.gif" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/clumps" target="_blank"
-                    rel="noopener noreferrer">Clumps</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/1289/817/64/64/638838549850518521_animated.gif"
+                    alt="Mod1" class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/clumps"
+                    target="_blank" rel="noopener noreferrer">Clumps</a>
                 <div class="descricao-mod">
-                    Agrupa orbes de XP em uma única entidade para reduzir o atraso quando há muitos em uma pequena área. Além disso, também faz com que o jogador colete imediatamente os orbes assim que tocar no jogador, para que você não fique preso com um monte de orbes na cara.<br>
+                    Agrupa orbes de XP em uma única entidade para reduzir o atraso quando há muitos em uma pequena área.
+                    Além disso, também faz com que o jogador colete imediatamente os orbes assim que tocar no jogador,
+                    para que você não fique preso com um monte de orbes na cara.<br>
                     <b />Versão: Clumps-forge-1.20.1-12.0.0.4.jar
                 </div>
             </li>
-
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">CobbleForDays</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/234/232/64/64/637077474978359034.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cobblefordays"
+                    target="_blank" rel="noopener noreferrer">CobbleForDays</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Aqui está um simples gerador de paralelepípedos. Existem 5 níveis disponíveis no caso de as pessoas
+                    desejarem adicionar várias versões.<br>
                     <b />Versão: CobbleForDays-1.8.0.jar
                 </div>
             </li>
 
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">CodeChicken Lib 1.8.+</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/36/121/64/64/635934545550873146.jpeg" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8"
+                    target="_blank" rel="noopener noreferrer">CodeChicken Lib 1.8.+</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Mais um lib '-'.<br>
                     <b />Versão: CodeChickenLib-1.20.1-4.4.0.516-universal.jar
                 </div>
             </li>
 
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/203/105/64/64/636930549407382137.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/comforts" target="_blank"
                     rel="noopener noreferrer">Comforts (Fabric/Forge/Quilt)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    O Comforts é um mod que adiciona sacos de dormir e redes ao Minecraft. Estes itens podem ser usados
+                    apenas como camas,
+                    exceto que eles não definem o ponto de geração de um jogador no uso,
+                    preservando com segurança o spawn de um jogador Ponto em sua base.
+                    Assim como as camas, elas também vêm em 16 cores diferentes!
+                    A diferença é que que os sacos de dormir podem ser empilhados e são mais convenientes de usar em
+                    aventuras e redes são como uma cama inversa,
+                    virando dia para a noite..<br>
                     <b />Versão: comforts-forge-6.4.0+1.20.1.jar
                 </div>
             </li>
 
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Construction Wand</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/290/591/64/64/637319211342552224.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/construction-wand"
+                    target="_blank" rel="noopener noreferrer">Construction Wand</a>
                 <div class="descricao-mod">
                     Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
                     poções não relacionados.<br>
@@ -1004,305 +1047,307 @@
                 </div>
             </li>
 
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/52/497/64/64/636115233396260155.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/coroutil" target="_blank"
                     rel="noopener noreferrer">CoroUtil</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Lib :D.<br>
                     <b />Versão: coroutil-forge-1.20.1-1.3.7.jar
                 </div>
             </li>
 
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Cosmetic Armor Reworked</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/27/600/64/64/635812915333870435.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-reworked"
+                    target="_blank" rel="noopener noreferrer">Cosmetic Armor Reworked</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este mod permite que você use dois conjuntos de armadura, um para exibição, um para função.
+                    Você também pode esconder a armadura para sua skin..<br>
                     <b />Versão: cosmeticarmorreworked-1.20.1-v1a.jar
                 </div>
             </li>
 
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Crafting on a stick</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/491/408/64/64/637800500563801169.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/crafting-on-a-stick"
+                    target="_blank" rel="noopener noreferrer">Crafting on a stick</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este mod adiciona várias bancadas de trabalho em um stick: Mesa de criação A bigorna Assoar
+                    GrindstoneTradução Tabela de Cartografia Corte de pedra Tabela de Smithing Você pode usar esses
+                    itens em mãos para acessar as bancadas de trabalho.<br>
                     <b />Versão: crafting-on-a-stick-1.20.1-1.1.5.jar
                 </div>
             </li>
 
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Create: Eureka!</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/983/100/64/64/638491307939944499.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/create-eureka"
+                    target="_blank" rel="noopener noreferrer">Create: Eureka!</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    É uma integração simples entre Create e Valkyrien Skies Eureka para Minecraft 1.20.1 Fabric and
+                    Forge
+                    A única adição no momento é o bloco "Motor de Rotação", que converte Rotação em Potência de Navio,
+                    quando conectado a uma embarcação apropriada.<br>
                     <b />Versão: create_eureka-1.0.0+forge-1.20.1.jar
                 </div>
             </li>
 
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/1065/609/64/64/638599304770885171.webp"
+                    alt="Mod1" class="mod-icon"><a
+                    href="https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails" target="_blank"
                     rel="noopener noreferrer">Create: Steam 'n' Rails</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Todos a bordo de um mod dedicado a expandir as possibilidades do sistema ferroviário da Create.
+                    Estamos transformando um sistema logístico básico em uma extensa e estética de ferrovias em
+                    Minecraft.<br>
                     <b />Versão: Steam_Rails-1.6.7+forge-mc1.20.1.jar
                 </div>
             </li>
 
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Cryonic Config</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/1187/482/64/64/638761849451577826.png"
+                    alt="Mod1" class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cryonicconfig"
+                    target="_blank" rel="noopener noreferrer">Cryonic Config</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    API denovo.<br>
                     <b />Versão: cryonicconfig-forge-1.0.0+mc1.20.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/930/446/64/64/638403276038916842.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cucumber" target="_blank"
                     rel="noopener noreferrer">Cucumber Library</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Lib xDDDDD.<br>
                     <b />Versão: Cucumber-1.20.1-7.0.13.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Dark Paintings</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/314/64/64/64/637410895037953935.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/dark-paintings"
+                    target="_blank" rel="noopener noreferrer">Dark Paintings</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este mod adiciona muitas novas pinturas ao jogo! Estas pinturas vêm em uma variedade de tamanhos e
+                    estilos de arte.<br>
                     <b />Versão: DarkPaintings-Forge-1.20.1-17.0.4.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Deeper and Darker</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/1055/574/64/64/638586877714541407.png"
+                    alt="Mod1" class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/deeperdarker"
+                    target="_blank" rel="noopener noreferrer">Deeper and Darker</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Deeper and Darker é um mod que visa melhorar o Deep Dark em Minecraft. Ele adiciona muitos novos
+                    recursos relacionados ao Deep Dark e uma nova dimensão chamada Otherside.<br>
                     <b />Versão: deeperdarker-forge-1.20.1-1.3.3.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Dungeon Crawl</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/410/569/64/64/637627452553277521.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl"
+                    target="_blank" rel="noopener noreferrer">Dungeon Crawl</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Dungeon Crawl gera grandes estruturas subterrâneas de masmorras roguelike.<br>
                     <b />Versão: Dungeon Crawl-1.20.1-2.3.15.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/893/778/64/64/638336829931216743.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/embeddium" target="_blank"
                     rel="noopener noreferrer">Embeddium</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    O Embeddium é um mod de desempenho gratuito e de código aberto para clientes do Minecraft.
+                    Ele é baseado na última versão licenciada FOSS da base de código de sódio e inclui correções de bugs
+                    e recursos adicionais para melhor compatibilidade com mod..<br>
                     <b />Versão: embeddium-0.3.31+mc1.20.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Embeddium (Rubidium) Extra</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/587/602/64/64/637956775773435327.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/rubidium-extra"
+                    target="_blank" rel="noopener noreferrer">Embeddium (Rubidium) Extra</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Rubidium Extra é um fork não oficial de Sódio Extra para Forge que visa trazer a maioria dos
+                    recursos OptiFine para Rubidium, além de fornecer alguns recursos, como correções de bugs visuais e
+                    outros recursos de desempenho ainda não disponíveis no Embeddium.<br>
                     <b />Versão: rubidium-extra-0.5.4.4+mc1.20.1-build.131.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Enchantable Blocks</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/980/876/64/64/638487282301744639.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/enchantable-blocks"
+                    target="_blank" rel="noopener noreferrer">Enchantable Blocks</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Blocos Encantáveis introduz encanamentos para vários blocos, incluindo fornos, mesas de artesanato e
+                    muito mais.<br>
                     <b />Versão: EnchantableBlocks-1.20.1-0.0.6.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Enchantment Descriptions</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/981/433/64/64/638488257207041172.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions"
+                    target="_blank" rel="noopener noreferrer">Enchantment Descriptions</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    As descrições de encantamento visam esclarecer os encantamentos, adicionando descrições de seus
+                    efeitos às dicas de ferramentas de itens encantados. <br>
                     <b />Versão: EnchantmentDescriptions-Forge-1.20.1-17.1.19.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Ender Storage 1.8.+</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/133/874/64/64/636487132065959761.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/ender-storage-1-8"
+                    target="_blank" rel="noopener noreferrer">Ender Storage 1.8.+</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Esses baús se ligam com base em padrões de cores correspondentes. Todos os baús com os mesmos botões
+                    de cor compartilham um inventário. Os sacos Ender podem ser codificados em cores para acessar os
+                    baús, além de dar-lhe uma solução portátil para a pergunta "Como faço para acessar as coisas na
+                    minha base quando eu não estou lá?"<br>
                     <b />Versão: EnderStorage-1.20.1-2.11.0.188-universal.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/583/775/64/64/637950952655885798.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/eureka-ships" target="_blank"
                     rel="noopener noreferrer">Eureka! Ships! for Valkyrien Skies (Forge/Fabric)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Construa e projete seu próprio navio do comum (ou modificado!) Blocos de Minecraft, coloque um Helm
+                    Helm do Navio, mude + clique com o botão direito, monte e observe sua criação de repente infundir
+                    com física. Suas construções Minecraft não são mais obrigadas a permanecer para sempre estáticas,
+                    sentadas no mesmo lugar por toda a eternidade.<br>
                     <b />Versão: eureka-1201-1.5.1-beta.3.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/898/789/64/64/638344540410652777.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/modpacks/explorify" target="_blank"
                     rel="noopener noreferrer">Explorify - Dungeons & Structures</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    explorar biomas batitiful, estruturas. e sobreviver às noites assolas que alguém espreita nas noites
+                    escuras da própria alegenda-se herobrine
                     <b />Versão: Explorify v1.6.2 f10-48.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Factory Blocks [Forge/Fabric/NeoForge]</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/566/597/64/64/637925796812131313.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/factory-blocks"
+                    target="_blank" rel="noopener noreferrer">Factory Blocks [Forge/Fabric/NeoForge]</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este mod é uma adição do chisels, ele te permite fazer blocos customizados do tipo fabrica.<br>
                     <b />Versão: factory_blocks-forge-1.4.0+mc1.20.1.jar
                 </div>
             </li>
             <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Fast Leaf Decay</a>
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay"
+                    target="_blank" rel="noopener noreferrer">Fast Leaf Decay</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    O único mod do lado do servidor original que se livra dessas folhas irritantes flutuando no ar!<br>
                     <b />Versão: FastLeafDecay-32.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/164/243/64/64/636686097562167838.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/fastfurnace" target="_blank"
                     rel="noopener noreferrer">FastFurnace</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    O FastFurnace utiliza mixins para editar a funcionalidade da Fornalha, Forno de Explosão e Fumante,
+                    melhorando o desempenho do TPS (não a velocidade de fundição!)<br>
                     <b />Versão: FastFurnace-1.20.1-8.0.2.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">FastWorkbench</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/164/244/64/64/636686097718417988.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/fastworkbench"
+                    target="_blank" rel="noopener noreferrer">FastWorkbench</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este é um mod destinado a melhorar o desempenho de todas as funções relacionadas à elaboração. Ele
+                    corrige o bug introduzido no Minecraft 1.12, onde o shift-click criando uma pilha de itens pode
+                    causar congelamentos momentâneos. No entanto, ele faz um pouco mais do que apenas corrigir esse
+                    problema.<br>
                     <b />Versão: FastWorkbench-1.20.1-8.0.4.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">FerriteCore ((Neo)Forge)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/323/941/64/64/637438748346113688.jpeg"
+                    alt="Mod1" class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/ferritecore"
+                    target="_blank" rel="noopener noreferrer">FerriteCore ((Neo)Forge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este mod reduz o uso de memória de Minecraft de algumas maneiras diferentes. Uma descrição técnica
+                    de alto nível das alterações está disponível aqui.<br>
                     <b />Versão: ferritecore-6.0.1-forge.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Forgiving Void</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/104/125/64/64/636343387943587114.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/forgiving-void"
+                    target="_blank" rel="noopener noreferrer">Forgiving Void</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Você já se perguntou o que aconteceria se, em vez de morrer no vazio, você continuasse caindo?
+                    Acontece que você acaba de sair do topo (e a queda nem sequer mata você devido ao poder mágico do
+                    milagre).<br>
                     <b />Versão: forgivingvoid-forge-1.20-10.0.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Formations (Structure Library)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/880/182/64/64/638308917268595246_animated.gif"
+                    alt="Mod1" class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/formations"
+                    target="_blank" rel="noopener noreferrer">Formations (Structure Library)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Formations é um mod de biblioteca que adiciona recursos adicionais aos pacotes de dados para gerar
+                    estruturas!<br>
                     <b />Versão: formations-1.0.3-forge-mc1.20.2.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Formations Nether</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/884/413/64/64/638318640273907844_animated.gif"
+                    alt="Mod1" class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/formations-nether"
+                    target="_blank" rel="noopener noreferrer">Formations Nether</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Formations Nether adiciona um monte de novas estruturas ao nether!<br>
                     <b />Versão: formationsnether-1.0.5.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/880/259/64/64/638309030055232913_animated.gif"
+                    alt="Mod1" class="mod-icon"><a
+                    href="https://www.curseforge.com/minecraft/mc-mods/formations-overworld" target="_blank"
                     rel="noopener noreferrer">Formations Overworld</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    O Overworld adiciona um monte de novas estruturas aos vários biomas do mundo superior!<br>
                     <b />Versão: formationsoverworld-1.0.4.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/972/575/64/64/638474885844428954.png" alt="Mod1"
+                    class="https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge" target="_blank"
                     rel="noopener noreferrer">FTB Library (Forge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Lib<br>
                     <b />Versão: ftb-library-forge-2001.2.9.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">FTB Teams (Forge)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/972/581/64/64/638474887222710106.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge"
+                    target="_blank" rel="noopener noreferrer">FTB Teams (Forge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Lib.<br>
                     <b />Versão: ftb-teams-forge-2001.3.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">FTB Ultimine (Forge)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/972/578/64/64/638474886453116037.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge"
+                    target="_blank" rel="noopener noreferrer">FTB Ultimine (Forge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    lib dnv.<br>
                     <b />Versão: ftb-ultimine-forge-2001.1.5.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/843/900/64/64/638240619391807565.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/gliders" target="_blank"
                     rel="noopener noreferrer">Gliders</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Os Gliders são o primeiro mod em um pacote de mods amigável para baunilha, projetado para melhorar o
+                    aspecto de aventura e exploração do Minecraft.<br>
                     <b />Versão: gliders-forge-1.1.7.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/925/423/64/64/638393995566142829.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/glitchcore" target="_blank"
                     rel="noopener noreferrer">GlitchCore</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    GlitchCore é um mod de biblioteca destinado a abstrair mod loaders e fornecer vários utilitários
+                    para os nossos mods..<br>
                     <b />Versão: GlitchCore-forge-1.20.1-0.0.1.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/928/345/64/64/638399591887143176.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/glodium" target="_blank"
                     rel="noopener noreferrer">Glodium</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Uma lib que fornece um sistema de renderização, rede e registro melhor.<br>
                     <b />Versão: Glodium-1.20-1.5-forge.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Goblin Traders</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/871/321/64/64/638288811545199466.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/goblin-traders"
+                    target="_blank" rel="noopener noreferrer">Goblin Traders</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Goblin Traders é um mod simples que adiciona goblins que têm negociações exclusivas.<br>
                     <b />Versão: goblintraders-forge-1.20.1-1.9.3.jar
                 </div>
             </li>
@@ -1324,295 +1369,338 @@
                     <b />Versão: gravestonecurioscompat-1.18.x-1.20.x-Forge-2.1.0
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Ice and Fire: Dragons</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/190/975/64/64/636857615673605328.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons"
+                    target="_blank" rel="noopener noreferrer">Ice and Fire: Dragons</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Ice and Fire é um mod criado por Raptorfarian e Alexthe666, que espera adicionar dragões de forma
+                    adequada. Atualmente, existem dois tipos de dragões: Gelo e Fogo. Os Dragões de Fogo cospem fogo e
+                    vagam pela maior parte do mundo habitável, enquanto os Dragões de Gelo habitam os lugares mais frios
+                    conhecidos pelo homem e congelam suas presas até a morte. Ambos os tipos de dragões nascem
+                    naturalmente quando adultos. E recebemos notícias de uma nova descoberta: dragões de relâmpago,
+                    poderosas criaturas noturnas que lançam raios explosivos para matar suas presas.<br>
                     <b />Versão: iceandfire-2.1.13-1.20.1-beta-5.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/425/207/64/64/637653794535451378.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/iceberg" target="_blank"
                     rel="noopener noreferrer">Iceberg [Neo/Forge]</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Iceberg é uma biblioteca essencial para desenvolvedores de mods! Ela oferece eventos, utilitários e
+                    helpers que facilitam a criação de mods, tanto no lado do cliente quanto no servidor. Compatível com
+                    Forge, Fabric e NeoForge, é a base perfeita para expandir suas aventuras no Minecraft.<br>
                     <b />Versão: Iceberg-1.20.1-forge-1.1.25.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/15/434/64/64/635625656444075090.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/iron-chests" target="_blank"
                     rel="noopener noreferrer">Iron Chests</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Iron Chests revoluciona o armazenamento no Minecraft! Transforme baús comuns em cofres de ferro,
+                    ouro, diamante e até netherite, com capacidades até 108 slots. Upgrades fáceis e sem perder itens —
+                    ideal para quem precisa de mais espaço sem complicação!<br>
                     <b />Versão: ironchest-1.20.1-14.4.4.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Iron Ender Chests</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/840/276/64/64/638234037709755745.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/iron-ender-chests"
+                    target="_blank" rel="noopener noreferrer">Iron Ender Chests</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Iron Ender Chests leva o armazenamento portátil a um novo nível! Com versões aprimoradas de Ender
+                    Chests usando materiais como ferro, diamante e netherite, você ganha mais espaço e segurança para
+                    seus itens. Ideal para quem busca praticidade e eficiência na organização!<br>
                     <b />Versão: iron_ender_chests-1.20-1.0.3.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Iron Furnaces</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/307/865/64/64/637389904761889621.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/iron-furnaces"
+                    target="_blank" rel="noopener noreferrer">Iron Furnaces</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Maximize a eficiência da fundição com velocidade incomparável, lados reconfiguráveis, acessórios
+                    para defumação e jateamento e muito mais.<br>
                     <b />Versão: ironfurnaces-1.20.1-4.1.6.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/950/138/64/64/638438723398261810.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/iron-ladders" target="_blank"
                     rel="noopener noreferrer">Iron Ladders</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Iron Ladders transforma escadas comuns em ferramentas poderosas e estilosas! Com versões de cobre,
+                    ferro, ouro, diamante e netherite, cada uma oferece maior velocidade de subida. Adicione upgrades
+                    como iluminação ou controle de entidades via redstone para uma experiência única!<br>
                     <b />Versão: ironladders-1.20.1-2.7.05-forge.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Item Collectors</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/287/251/64/64/637307651485796093.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/item-collectors"
+                    target="_blank" rel="noopener noreferrer">Item Collectors</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Colecionadores de Itens adicionam Colecionadores que coletam itens em um intervalo específico! O
+                    intervalo dos Colecionadores de Itens pode ser alterado e os itens podem ser colocados na lista de
+                    permissões ou bloqueios!<br>
                     <b />Versão: itemcollectors-1.1.10-forge-mc1.20.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/9/144/64/64/635421614078544069.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/journeymap" target="_blank"
                     rel="noopener noreferrer">JourneyMap</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    JourneyMap é o mapa definitivo para exploradores de Minecraft! Com visualização em tempo real,
+                    minimapa, modo de caverna, marcação de pontos de interesse e até acesso via navegador, é a
+                    ferramenta essencial para quem não quer se perder — literalmente!<br>
                     <b />Versão: journeymap-1.20.1-5.10.3-forge.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Just Enough Breeding (JEBr)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/862/389/64/64/638270817972208061.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding"
+                    target="_blank" rel="noopener noreferrer">Just Enough Breeding (JEBr)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Just Enough Breeding (JEBr) é a extensão perfeita para o JEI, revelando tudo sobre a reprodução dos
+                    mobs: quais itens alimentar, se precisam ser domesticados, quantos ovos geram e até qual é o ovo de
+                    invocação correspondente. Ideal para quem quer entender a biologia do Minecraft sem sair da
+                    interface!<br>
                     <b />Versão: justenoughbreeding-forge-1.20-1.20.1-1.5.0.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Just Enough Professions (JEP)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/311/84/64/64/637401177607519178.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep"
+                    target="_blank" rel="noopener noreferrer">Just Enough Professions (JEP)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este mod adiciona uma nova funcionalidade ao JEI. Essa nova funcionalidade permite ao usuário
+                    determinar quais mesas de trabalho são necessárias para cada profissão de aldeão.<br>
                     <b />Versão: JustEnoughProfessions-forge-1.20.1-3.0.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Just Enough Resources (JER)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/32/419/64/64/635880199659979425.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer"
+                    target="_blank" rel="noopener noreferrer">Just Enough Resources (JER)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Just Enough Resources (JER) é o complemento essencial para o JEI, revelando onde minerar cada
+                    minério, que mobs soltam quais itens, o que há nos baús de masmorras e até como cultivar recursos.
+                    Com gráficos personalizáveis e integração com mods como Advent of Ascension, é o guia definitivo
+                    para caçadores de recursos!<br>
                     <b />Versão: JustEnoughResources-1.20.1-1.4.0.247.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/629/120/64/64/638026711195851029.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/justhammers" target="_blank"
                     rel="noopener noreferrer">JustHammers</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Adicione martelos ao jogo que permitam minerar em dimensões 3x3, 3x3x3, 5x5x3 e, finalmente, 5x5x5!
+                    Eles são incríveis.<br>
                     <b />Versão: justhammers-forge-2.0.3+mc1.20.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/302/731/64/64/637368998906148773.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/konkrete" target="_blank"
                     rel="noopener noreferrer">Konkrete [Forge/NeoForge]</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Konkrete é a fundação invisível que dá vida a mods como Heroic Armory e Living Enchantment. Sem ele,
+                    esses mods não funcionam — é o alicerce essencial para quem busca aventuras épicas e encantamentos
+                    dinâmicos no seu modpack!<br>
                     <b />Versão: konkrete_forge_1.8.0_MC_1.20-1.20.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Kotlin for Forge</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/236/269/64/64/637091078382616109.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge"
+                    target="_blank" rel="noopener noreferrer">Kotlin for Forge</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Usado para criar mods com a linguagem de programação Kotlin. Funciona sombreando as bibliotecas
+                    Kotlin, fornecendo KotlinLanguageProvider para carregar declarações de objetos @Mod, fornecendo
+                    AutoKotlinEventBusSubscriber para carregar declarações @EventBusSubscriber e fornecendo funções
+                    utilitárias e constantes úteis.<br>
                     <b />Versão: kotlinforforge-4.11.0-all.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Legendary Tooltips [Neo/Forge]</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/438/697/64/64/637684634562173457.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips"
+                    target="_blank" rel="noopener noreferrer">Legendary Tooltips [Neo/Forge]</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Legendary Tooltips transforma tooltips monótonos em obras de arte: adiciona bordas customizáveis,
+                    sombras, nomes centralizados, prévias 3D e divisores elegantes — tudo configurável por datapack,
+                    resource pack ou mod!<br>
                     <b />Versão: LegendaryTooltips-1.20.1-forge-1.4.5.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/978/896/64/64/638484152344379944.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/lionfish-api" target="_blank"
                     rel="noopener noreferrer">Lionfish API</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Lionfish API é uma API de animação leve para Forge/NeoForge, baseada na Citadel & Mowzie, criada
+                    pelo mcl_ender para substituir versões pesadas e acelerar o suporte a animações personalizadas em
+                    mods – perfeita para modders que querem performance e fluidez!<br>
                     <b />Versão: lionfishapi-2.4-Fix.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/491/203/64/64/637799866799448709.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/lucky-block" target="_blank"
                     rel="noopener noreferrer">Lucky Block</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Ao abrir um Bloco da Sorte, ele escolherá aleatoriamente um entre mais de 100 resultados possíveis.
+                    Esses resultados abrangem a maioria dos componentes do jogo, incluindo itens, baús, monstros,
+                    estruturas, poções, encantamentos, etc.<br>
                     <b />Versão: lucky-block-forge-1.20.1-13.0.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/511/926/64/64/637831439174701357.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/luggage" target="_blank"
                     rel="noopener noreferrer">Luggage</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Luggage traz de volta o clássico “chest que anda” do OpenBlocks: um baú que te segue, coleta itens
+                    perdidos, é quase indestrutível e, se for atingido por raio, dobra sua capacidade — tudo controlado
+                    com apito, pick-up fácil e à prova de pirataria! <br>
                     <b />Versão: luggage-1.20-1.6.2.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/226/708/64/64/637046797172980934.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/mahou-tsukai" target="_blank"
+                    rel="noopener noreferrer">Mahou Tsukai</a>
+                <div class="descricao-mod">
+                    Mahou Tsukai é um mod de magia inspirado em animes como Fate/Stay Night, onde você sacrifica sua
+                    própria saúde para conjurar feitiços poderosos. Com círculos de sangue, catalisadores e efeitos
+                    visuais impressionantes, cada feitiço é único e impactante. Ideal para quem busca uma experiência
+                    mágica profunda e cinematográfica no Minecraft. <b />Versão: iceandfire-2.1.13-1.20.1-beta-5.jar
+                </div>
+            </li>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/621/707/64/64/638012892820321228.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/merequester" target="_blank"
                     rel="noopener noreferrer">ME Requester</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    O Solicitante ME pode hospedar 5 solicitações por padrão. Você pode adicionar quantas solicitações
+                    desejar ao seu sistema e acessá-las remotamente através do Terminal do Solicitante ME. O terminal
+                    permite configurar as solicitações e monitorar o status remotamente.<br>
                     <b />Versão: merequester-forge-1.20.1-1.1.5.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Mekanism: Weapons</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/897/181/64/64/638342233946025469.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/mekanism-weapons"
+                    target="_blank" rel="noopener noreferrer">Mekanism: Weapons</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Mekanism: Weapons traz o melhor do estilo “Meka” tech com uma katana teletransportadora devastadora
+                    e um arco energético modular (auto‑tiros, foco e mais), além de um acessório estiloso que carrega
+                    suas armas nas costas — upgrade explosivo para quem curte armas high‑tech no seu modpack!<br>
                     <b />Versão: MekanismWeapons-1.20.1-2.5.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/567/136/64/64/637927203949622768.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/modonomicon" target="_blank"
                     rel="noopener noreferrer">Modonomicon</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Um guia in-game estilo Thaumonomicon/Patchouli que é totalmente personalizável via datapacks, com
+                    progressão em visual 2D, páginas com receitas, imagens, multiblocos e textos em Markdown — ideal
+                    para criar um livro interativo cheio de estilo e lógica de desbloqueio!<br>
                     <b />Versão: modonomicon-1.20.1-forge-1.77.6.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">More Dragon Eggs</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/244/705/64/64/637147260943091072.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/more-dragon-eggs"
+                    target="_blank" rel="noopener noreferrer">More Dragon Eggs</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Um pequeno mod que gera um novo ovo de dragão toda vez que o dragão é morto, em vez de apenas na
+                    primeira vez.<br>
                     <b />Versão: moredragoneggs-4.0.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">More Minecarts and Rails</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/392/267/64/64/637586168176720941.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/more-minecarts"
+                    target="_blank" rel="noopener noreferrer">More Minecarts and Rails</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    More Minecarts & Rails reinventa o transporte no Minecraft com trilhos incríveis (madeira, maglev,
+                    lightspeed, holográficos e detectores coloridos), carrinhos especializados (tanque, bateria, estase
+                    de pérolas, de sinal, bunker de chunk etc.), upgrades divertidos (aerodinâmicos, pushcarts com
+                    pistão, ligações), tudo com foco em logística, automação e diversão galopante!<br>
                     <b />Versão: moreminecarts-1.8.3.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">More Mob Variants</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/629/271/64/64/638027075824799126.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/more-mob-variants"
+                    target="_blank" rel="noopener noreferrer">More Mob Variants</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Os mobs mais recentes que foram adicionados ao jogo têm muitas variantes divertidas para se ver, mas
+                    e os antigos? Este mod adiciona novas variantes aos mobs mais antigos, todas com a mesma aparência,
+                    para torná-los um pouco mais originais.<br>
                     <b />Versão: moremobvariants-forge+1.20.1-1.3.0.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/277/38/64/64/637268275199321868.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/more-red" target="_blank"
                     rel="noopener noreferrer">More Red</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Com o more red em seu mundo fazer sistemas de redstone ficara mais facil do que nunca!<br>
                     <b />Versão: morered-1.20.1-4.0.0.4.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/824/374/64/64/638209403192702606.jpeg"
+                    alt="Mod1" class="mod-icon"><a
+                    href="https://www.curseforge.com/minecraft/mc-mods/more-red-x-cc-tweaked-compat" target="_blank"
                     rel="noopener noreferrer">More Red x CC:Tweaked Compat</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este é um mod simples que conecta os cabos de rede incluídos no More Red e a API redstone incluída
+                    no CC:Tweaked.<br>
                     <b />Versão: MoreRed-CCT-Compat-1.20.1-1.0.0.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/467/691/64/64/637749969243449870.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks" target="_blank"
                     rel="noopener noreferrer">Mouse Tweaks</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    O Mouse Tweaks substitui a mecânica padrão de arrastar RMB, adiciona duas novas mecânicas de
+                    arrastar LMB e a capacidade de mover itens rapidamente com a roda de rolagem.<br>
                     <b />Versão: MouseTweaks-forge-mc1.20.1-2.25.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Nature's Compass</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/54/102/64/64/636131217371752080.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/natures-compass"
+                    target="_blank" rel="noopener noreferrer">Nature's Compass</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    A Bússola da Natureza é um item utilitário que permite pesquisar a localização de um bioma em
+                    qualquer lugar do mundo e visualizar informações sobre ele. Se você procura uma bússola para
+                    localizar estruturas, confira a Bússola do Explorador.<br>
                     <b />Versão: NaturesCompass-1.20.1-1.11.2-forge.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/588/684/64/64/637958998850280257.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/neat" target="_blank"
                     rel="noopener noreferrer">Neat</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Neat é um mod que adiciona Molduras de Unidade ao topo de cada entidade, como visto na imagem acima.
+                    Você pode ver informações como nome, saúde e armadura. Sim, o nome é um trocadilho com Tidy
+                    Plates.<br>
                     <b />Versão: Neat-1.20.1-41-FORGE.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Nether's Delight</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/397/613/64/64/637598857629083481.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/nethers-delight"
+                    target="_blank" rel="noopener noreferrer">Nether's Delight</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Nether's Delight é um mod complementar para Farmer's Delight baseado em adicionar conteúdo culinário
+                    ao nether!<br>
                     <b />Versão: nethersdelight-1.20.1-4.0.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">NetherPortalFix</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/33/283/64/64/635893403164870085.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/netherportalfix"
+                    target="_blank" rel="noopener noreferrer">NetherPortalFix</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Já jogou em um servidor multijogador, construído perto de outros jogadores, e ao retornar do Nether,
+                    surpreendentemente se viu na base de outro jogador? É por causa da proporção de blocos de 8:1 entre
+                    o Nether e o Mundo Superior. É realmente estranho, porém, que você entre em um portal no mundo
+                    superior e, ao retornar por onde veio, saia por um portal diferente no mundo superior. Este mod
+                    corrige esse problema.<br>
                     <b />Versão: netherportalfix-forge-1.20-13.0.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Noisium</a>
+            <li><img src="https://github.com/Steveplays28/noisium/raw/24de632923c03864d65568a2cb5ce1e2cee0a304/docs/assets/icon/icon_128x128.png"
+                    alt="Mod1" class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/noisium"
+                    target="_blank" rel="noopener noreferrer">Noisium</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
-                    <b />Versão: noisium-forge-2.3.0+mc1.20-1.20.1.jar
+                    O Noisium altera algumas funções de geração de mundos que outros mods não abordam, para preencher as
+                    lacunas deixadas por outros mods de otimização de desempenho. Mais notavelmente, o
+                    NoiseChunkGenerator#populateNoise foi otimizado para acelerar o posicionamento do estado do bloco ao
+                    gerar novos pedaços. <b />Versão: noisium-forge-2.3.0+mc1.20-1.20.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/482/986/64/64/637782351378079841.png" alt="Mod1"
                     class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
                     rel="noopener noreferrer">Nullscape</a>
                 <div class="descricao-mod">
@@ -1621,468 +1709,543 @@
                     <b />Versão: Nullscape_1.20.x_v1.2.8.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/634/623/64/64/638035352241820947.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/obscure-api" target="_blank"
                     rel="noopener noreferrer">Obscure API (Forge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Precisa do seu próprio servidor para jogar com os amigos? A NameHero oferece serviços de hospedagem
+                    incríveis com configuração automática de servidor para qualquer versão do jogo e um painel de
+                    controle fácil de usar para personalização avançada. Crie seu próprio servidor em 5 minutos, sem
+                    precisar de nenhum conhecimento técnico!<br>
                     <b />Versão: obscure_api-15.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/247/293/64/64/637162328727833986.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/occultism" target="_blank"
                     rel="noopener noreferrer">Occultism</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Os mágicos são amplamente conhecidos como poderosos portadores de magia. Na verdade, eles dependem
+                    de escravos espirituais invocados, conhecidos como demônios, que realizam magia em seu nome.<br>
                     <b />Versão: occultism-1.20.1-1.141.4.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Oliver's Story Mode Armors</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/636/783/64/64/638039563804410698.png" alt="Mod1"
+                    class="mod-icon"><a
+                    href="https://www.curseforge.com/minecraft/mc-mods/olivers-minecraft-story-mode-armors"
+                    target="_blank" rel="noopener noreferrer">Oliver's Story Mode Armors</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Saudações das Terras Distantes, viajantes! Este mod adiciona os conjuntos de armadura originais do
+                    Minecraft: Modo História! O mod inteiro foi criado no MCreator, e os conjuntos de armadura 3D foram
+                    criados no Blockbench.<br>
                     <b />Versão: mcsmarmors-1.7.1-1.20.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/588/685/64/64/637958998949519797.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/patchouli" target="_blank"
                     rel="noopener noreferrer">Patchouli</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Os sistemas do Patchouli permitem que qualquer modder ou criador de modpacks crie rapidamente belos
+                    livros repletos de recursos que aprimoram a experiência do usuário. O conjunto de recursos do mod,
+                    voltado para o usuário, foi desenvolvido em função de pesquisas realizadas sobre os recursos que as
+                    pessoas gostaram no Lexica Botania, do Botania.<br>
                     <b />Versão: Patchouli-1.20.1-84.1-FORGE.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">playerAnimator</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/588/418/64/64/637958435315527412.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/playeranimator"
+                    target="_blank" rel="noopener noreferrer">playerAnimator</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    animar o jogador usando quadros-chave.<br>
                     <b />Versão: player-animation-lib-forge-1.0.2-rc1+1.20.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Portable Crafting Table</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/352/697/64/64/637508400070589858.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/portable-crafting-table"
+                    target="_blank" rel="noopener noreferrer">Portable Crafting Table</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este mod adiciona uma mesa de artesanato portátil (um item) para criar sem a necessidade de colocar
+                    nada<br>
                     <b />Versão: PortableCraftingTable-1.20.1-3.2.2-[FORGE].jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/581/617/64/64/637946673404611382.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/prism-lib" target="_blank"
                     rel="noopener noreferrer">Prism [Neo/Forge]</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Esta biblioteca contém um poderoso conjunto de utilitários para adicionar facilmente funcionalidades
+                    relacionadas a cores aos seus mods.<br>
                     <b />Versão: Prism-1.20.1-forge-1.0.5.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Radium Reforged</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/482/559/64/64/637781330810941375.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/radium-reforged"
+                    target="_blank" rel="noopener noreferrer">Radium Reforged</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    O Canary basicamente desabilita algumas otimizações importantes do Lithium, além disso, o Canary é
+                    um hardfork e a atualização para o upstream é lenta, então agimos de forma diferente.<br>
                     <b />Versão: radium-mc1.20.1-0.12.4+git.26c9d8e.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Railcraft Reborn</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/909/146/64/64/638361918379120178.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/railcraft-reborn"
+                    target="_blank" rel="noopener noreferrer">Railcraft Reborn</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Railcraft Reborn é uma porta do Railcraft para versões modernas do Minecraft. A porta foi autorizada
+                    pela CovertJaguar, que nos deu permissão para publicá-la.<br>
                     <b />Versão: railcraft-reborn-1.20.1-1.1.9.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/45/244/64/64/636041189435907526.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/ranged-pumps" target="_blank"
                     rel="noopener noreferrer">Ranged Pumps</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Ranged Pumps é um mod simples que adiciona uma bomba que bombeia líquidos em um alcance.<br>
                     <b />Versão: rangedpumps-1.1.0.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Relics: Artifacts Compat</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/1083/26/64/64/638623617290403030_animated.gif"
+                    alt="Mod1" class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/rar-compat"
+                    target="_blank" rel="noopener noreferrer">Relics: Artifacts Compat</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    RAR-Compat (Relics: Artifacts Compat) redefine a mecânica do mod Artifacts, incorporando-a aos
+                    sistemas mais complexos e em camadas do Relics. Em vez de simplesmente adicionar equipamentos
+                    gerados aleatoriamente, este complemento transforma os itens do Artifacts para corresponder ao
+                    sistema de nivelamento avançado do Relics, introduzindo novas sutilezas e mecânicas.<br>
                     <b />Versão: rarcompat-1.20.1-0.1.7.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/269/36/64/64/637240495345086317.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/river-redux" target="_blank"
                     rel="noopener noreferrer">River Redux</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    River Redux é um mod da Fabric and Forge que melhora a geração de rios do Vanilla e fornece 3 novos
+                    biomas fluviais para adicionar variedade! Atualmente, ele adiciona um rio arenoso, um rio de
+                    cascalho e um rio tropical. Mais biomas fluviais também estão planejados. River Redux requer o
+                    Terrablender. Em um servidor, apenas o servidor precisa do mod instalado.<br>
                     <b />Versão: riverredux-0.3.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Scalable Cat's Force</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/202/459/64/64/636926521753777209.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/scalable-cats-force"
+                    target="_blank" rel="noopener noreferrer">Scalable Cat's Force</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Uma biblioteca para mods escritos em Scala.<br>
                     <b />Versão: ScalableCatsForce-3.3.1-build-O-with-library.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/290/62/64/64/637317487570604323.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/scuba-gear" target="_blank"
                     rel="noopener noreferrer">Scuba Gear</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Afogados que surgem a até 15 blocos de uma ruína oceânica têm chance de surgir com o equipamento,
+                    sendo que algumas peças são mais raras que outras. Das mais comuns para as menos comuns, capacete
+                    (50%), botas (40%), perneiras (30%) e peitoral (20%). Se um deles conseguir surgir usando o
+                    equipamento, terá todas as peças anteriores alinhadas. Portanto, se um Afogado surgir com perneiras
+                    de mergulho, ele certamente terá as botas e o capacete também.<br>
                     <b />Versão: scuba_gear-1.20.1-1.0.6.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Simple Planes (Forge)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/307/288/64/64/637387965133429571.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/simple-planes"
+                    target="_blank" rel="noopener noreferrer">Simple Planes (Forge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este mod adiciona uma grande variedade de aviões para se construir em seu mundo minecraft!<br>
                     <b />Versão: simpleplanes-1.20.1-5.3.3.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">SmartBrainLib (Forge/Fabric/Quilt)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/596/446/64/64/637972388178699939.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/smartbrainlib"
+                    target="_blank" rel="noopener noreferrer">SmartBrainLib (Forge/Fabric/Quilt)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    O sistema cerebral no Minecraft é um novo sistema de IA de entidade quase enigmático que a Mojang
+                    introduziu para lidar com mobs mais complexos e permitir um tratamento de entidades mais
+                    avançado.<br>
                     <b />Versão: SmartBrainLib-forge-1.20.1-1.15.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/1068/309/64/64/638602793082566240.png"
+                    alt="Mod1" class="mod-icon"><a
+                    href="https://www.curseforge.com/minecraft/mc-mods/dynamiclights-reforged" target="_blank"
                     rel="noopener noreferrer">Sodium/Embeddium Dynamic Lights</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Uma porta multiloader não oficial do LambDynamicLights que se integra com Sodium e Embeddium.<br>
                     <b />Versão: sodiumdynamiclights-forge-1.0.10-1.20.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/1080/739/64/64/638620165439711976.png"
+                    alt="Mod1" class="mod-icon"><a
+                    href="https://www.curseforge.com/minecraft/mc-mods/sodium-options-api" target="_blank"
                     rel="noopener noreferrer">Sodium/Embeddium Options API</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este mod adiciona eventos multiplataforma para integração do menu de opções do Sodium/Embeddium. Por
+                    exemplo, você pode adicionar uma página de opções para o Embeddium no Forge, para o Fabric Sodium
+                    0.5 na versão 1.20.1 e para o Fabric/NeoForge Sodium 0.6 na versão 1.21.1 com um único evento.<br>
                     <b />Versão: sodiumoptionsapi-forge-1.0.10-1.20.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/1051/861/64/64/638581777904348253.png"
+                    alt="Mod1" class="mod-icon"><a
+                    href="https://www.curseforge.com/minecraft/mc-mods/spayzers-story-mode-additions" target="_blank"
                     rel="noopener noreferrer">Story Mode Additions</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    SSMA, abreviação de Spayzers' Story Mode Additions, é um mod que pega TUDO da série de jogos
+                    Minecraft: Story Mode e adiciona ao Minecraft.<br>
                     <b />Versão: Spayzers' Story Mode Additions - 1.3.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/562/581/64/64/637916418629477919.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/structory" target="_blank"
                     rel="noopener noreferrer">Structory</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Structory é um mod de estrutura atmosférica atualizado sazonalmente, com conhecimento leve para
+                    Tecido/Forja/Colcha.<br>
                     <b />Versão: Structory_1.20.x_v1.3.5.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Structory: Towers</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/727/353/64/64/638080607378294267.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/structory-towers"
+                    target="_blank" rel="noopener noreferrer">Structory: Towers</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Structory: Towers adiciona torres imersivas com temática de bioma ao mundo para
+                    Fabric/Forge/Quilt.<br>
                     <b />Versão: Structory_Towers_1.20.x_v1.0.7.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">SuperMartijn642's Config Lib</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/334/247/64/64/637467847705006848.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib"
+                    target="_blank" rel="noopener noreferrer">SuperMartijn642's Config Lib</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    A biblioteca de configuração do SuperMartijn642 permite que você especifique uma configuração uma
+                    vez e, em seguida, ele lida com o recarregamento de valores entre cargas mundiais, sincronizando
+                    valores com clientes e gerando valores somente para cliente ou servidor por conta própria.<br>
                     <b />Versão: supermartijn642configlib-1.1.8-forge-mc1.20.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">SuperMartijn642's Core Lib</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/352/207/64/64/637507429195617557.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib"
+                    target="_blank" rel="noopener noreferrer">SuperMartijn642's Core Lib</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    A biblioteca principal do SuperMartijn642 adiciona muitas implementações básicas para interfaces
+                    gráficas (GUIs), blocos, entidades de blocos e pacotes de rede que permitem código semelhante entre
+                    o Minecraft 1.12, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19 e 1.20 e código semelhante entre o Fabric e o
+                    Forge!<br>
                     <b />Versão: supermartijn642corelib-1.1.18-forge-mc1.20.1.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/478/14/64/64/637773351522362655.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/terrablender" target="_blank"
                     rel="noopener noreferrer">TerraBlender (Forge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    TerraBlender é um mod de biblioteca para adicionar biomas de maneira simples e compatível com o novo
+                    sistema de biomas/terreno do Minecraft.<br>
                     <b />Versão: TerraBlender-forge-1.20.1-3.0.1.10.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/554/659/64/64/637897033487568646.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/terralith" target="_blank"
                     rel="noopener noreferrer">Terralith</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Terralith é um datapack (empacotado como um mod para Fabric e Forge) projetado para reformular
+                    fundamentalmente o mundo superior com novos biomas e cavernas. Ele faz isso sem adicionar novos
+                    blocos, tornando-o totalmente compatível com os clientes vanilla.<br>
                     <b />Versão: Terralith_1.20.x_v2.5.4.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/816/783/64/64/638194171174203953.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/aether" target="_blank"
                     rel="noopener noreferrer">The Aether</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Aether gira em torno de uma dimensão no alto do céu, repleta de vastas terras celestes de nuvens e
+                    ilhas flutuantes. Esta dimensão apresenta sua própria nova aventura de sobrevivência, baseada em uma
+                    progressão básica de sobrevivência no estilo vanilla, que apresenta novos minérios, criaturas
+                    míticas e três masmorras perigosas, cada uma com seus próprios itens de saque poderosos.<br>
                     <b />Versão: aether-1.20.1-1.5.2-neoforge.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Translocators 1.8.+</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/133/880/64/64/636487165488956978.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/translocators-1-8"
+                    target="_blank" rel="noopener noreferrer">Translocators 1.8.+</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Visão geral: Translocators é um mod que permite transferir itens e líquidos entre inventários
+                    próximos com um nível de controle altamente configurável, de uma forma que parece natural para
+                    Minecraft. Foi desenvolvido em 36 horas durante o concurso de mods ModJam e conseguiu levar o
+                    primeiro prêmio.<br>
                     <b />Versão: Translocators-1.20.1-2.6.0.86-universal.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Traveler's Titles (Forge/NeoForge)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/407/305/64/64/637621970918314166.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/travelers-titles"
+                    target="_blank" rel="noopener noreferrer">Traveler's Titles (Forge/NeoForge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Traveler's Titles é um mod simples do lado do cliente que adiciona títulos semelhantes aos de RPG ao
+                    entrar em biomas ou dimensões.<br>
                     <b />Versão: TravelersTitles-1.20-Forge-4.0.2.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/866/276/64/64/638278226436986770.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/trimseffects" target="_blank"
                     rel="noopener noreferrer">TrimsEffects - 2.1 NOW AVAILABLE!</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    O objetivo deste mod não é outro senão expandir o mundo de trims adicionados pela Mojang nas últimas
+                    versões, já que agora, cada um deles poderá conceder um efeito.<br>
                     <b />Versão: trimeffects-forge-mc1.20-2.1.2.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/382/156/64/64/637566129446964304.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/trofers" target="_blank"
                     rel="noopener noreferrer">Trofers</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    O pacote de dados incluso adiciona um troféu para cada entidade viva, com 1/1000 de chance de cair
+                    quando a entidade correspondente é morta por um jogador. A taxa de queda desses troféus pode ser
+                    alterada usando a configuração. Entidades de Quark, Alex's Mobs, Tinker's Construct e Thermal
+                    Expansion também são suportadas.<br>
                     <b />Versão: trofers-forge-5.0.2.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">True Ending ~ Ender Dragon Overhaul</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/1072/254/64/64/638608077894281915.png"
+                    alt="Mod1" class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/true-ending"
+                    target="_blank" rel="noopener noreferrer">True Ending ~ Ender Dragon Overhaul</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    True Ending reformula radicalmente o Dragão Ender original. Lute contra um Dragão Ender muito mais
+                    forte, com vida aumentada, novos ataques e novas fases que aumentam progressivamente a dificuldade
+                    do dragão. Com outras adições, como sopro de dragão mais duradouro, atmosfera de partículas e um
+                    golpe final climático, a luta contra o Dragão Ender agora é muito mais emocionante e mais
+                    gratificante de vencer.<br>
                     <b />Versão: tru.e-ending-v1.1.Oc.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Underground Villages</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/528/226/64/64/637850626719654459.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/underground-villages"
+                    target="_blank" rel="noopener noreferrer">Underground Villages</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Com este mod, você poderá encontrar uma variante subterrânea das vilas que normalmente ficam na
+                    superfície. Não há garantia de que os aldeões ainda estejam vivos quando você chegar à vila, pois
+                    cavernas não são exatamente o lugar mais seguro para eles.<br>
                     <b />Versão: UndergroundVillages-forge-1.20.1-2.1.0.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Valkyrien Skies (Forge/Fabric)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/764/992/64/64/638100428764416845.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/valkyrien-skies"
+                    target="_blank" rel="noopener noreferrer">Valkyrien Skies (Forge/Fabric)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Blocos que se movem. Blocos que escalam. Blocos com física. Mini naves. Naves enormes. Com Valkyrien
+                    Skies, nem o céu é o limite.<br>
                     <b />Versão: valkyrienskies-120-2.3.0-beta.7.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">When Dungeons Arise - Forge!</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/405/21/64/64/637616382422917614.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise"
+                    target="_blank" rel="noopener noreferrer">When Dungeons Arise - Forge!</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    When Dungeons Arise é um gerador de masmorras gigantesco que reúne diversas masmorras e as gera
+                    aleatoriamente em seus mundos para garantir aventuras e desafios gloriosos. Nos afastamos das
+                    estruturas padrão do vanilla, resultando em masmorras imponentes para você se perder.<br>
                     <b />Versão: DungeonsArise-1.20.x-2.1.58-release.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">Xtones Reworked</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/628/241/64/64/638024609443315767.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/xtones-reworked"
+                    target="_blank" rel="noopener noreferrer">Xtones Reworked</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este mod adicionará 512 blocos de construção diferentes que podem ser usados ​​para construção e
+                    decoração. Você encontrará todas as 34 variedades originais de blocos com suas 15 subvariações, que
+                    também são encontradas no mod Xtones original.<br>
                     <b />Versão: xtonesreworked-1.0.4-F_1.20.1-47.2.0.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/597/707/64/64/637974897701013308.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/xycraft" target="_blank"
                     rel="noopener noreferrer">XyCraft</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    O XyCraft Core serve como base para todos os mods do XyCraft, bem como para outros mods que desejam
+                    se integrar à estrutura. Observação: o XyCraft é compartimentado em diferentes mods para permitir
+                    que você escolha o que deseja ter em seu mundo, além de simplificar o processo de
+                    desenvolvimento.<br>
                     <b />Versão: XyCraft Core-0.6.22.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">XyCraft: Machines</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/884/628/64/64/638318987583142561.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/xycraft-machines"
+                    target="_blank" rel="noopener noreferrer">XyCraft: Machines</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Tecnologia Estética. Depois de cerca de uma década, finalmente voltamos. Trazendo de volta recursos
+                    como os tanques multibloco, a mesa de criação do fabricante e muito mais! Embora o que temos
+                    disponível seja focado em desempenho e polimento, observe que alguns recursos ainda estão em
+                    desenvolvimento, como o balanceamento de fluidos entre os tanques (esta é nossa maior prioridade) e
+                    a documentação para que você possa determinar facilmente COMO algo deve funcionar (este é um
+                    problema bastante conhecido, pois algumas coisas são pouco intuitivas para determinar por força
+                    bruta). Ainda há MUITO trabalho a ser feito, mas o conteúdo de nível básico ainda é bem divertido
+                    quando combinado com outros mods.<br>
                     <b />Versão: XyCraft Machines-0.6.22.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">XyCraft: Override</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/597/771/64/64/637975018215872951.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/xycraft-override"
+                    target="_blank" rel="noopener noreferrer">XyCraft: Override</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Embora o Minecraft vanilla tenha muitos recursos que proporcionam diversão e prazer, e se mudássemos
+                    um pouquinho sua estética para torná-lo talvez mais moderno? Entenda que, embora eu goste muito do
+                    novo conteúdo substituído, ele não é rotulado como "melhor", "melhor" ou "melhorado", mas sim
+                    puramente "conectado".<br>
                     <b />Versão: XyCraft Override-0.6.22.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">XyCraft: World</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/597/769/64/64/637975016974953299.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/xycraft-world"
+                    target="_blank" rel="noopener noreferrer">XyCraft: World</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    O XyCraft World é um componente obrigatório da maioria dos mods e, embora pudesse ter sido incluído
+                    no Core, houve alguma discussão sobre o fornecimento de ferramentas externas para desenvolvedores
+                    sem exigir o aspecto de geração de mundos. Por esse mesmo motivo, ele foi separado. Toda e qualquer
+                    geração ou exploração de mundos residirá neste módulo.<br>
                     <b />Versão: XyCraft World-0.6.22.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/881/136/64/64/638311022829381213.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/yungs-api" target="_blank"
                     rel="noopener noreferrer">YUNG's API (Forge/NeoForge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este é um mod de biblioteca para alguns dos mods do Forge do YUNG. É basicamente uma coleção de
+                    funções utilitárias compartilhadas e abstrações de dados. É necessário para todos os mods do YUNG no
+                    Minecraft 1.16.5. Confira meu perfil no CurseForge para ver todos os meus mods!<br>
                     <b />Versão: YungsApi-1.20-Forge-4.0.6.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">YUNG's Better Desert Temples (Forge/NeoForge)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/881/113/64/64/638311014668815538.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples"
+                    target="_blank" rel="noopener noreferrer">YUNG's Better Desert Temples (Forge/NeoForge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    A atualização definitiva para os templos do deserto do Minecraft! Os Templos do Deserto Melhores do
+                    YUNG redesenham os templos do deserto da versão vanilla para torná-los muito mais emocionantes,
+                    adicionando uma variedade de novos quebra-cabeças, armadilhas,<br>
                     <b />Versão: YungsBetterDesertTemples-1.20-Forge-3.0.3.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">YUNG's Better Dungeons (Forge/NeoForge)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/881/111/64/64/638311013966535180.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons"
+                    target="_blank" rel="noopener noreferrer">YUNG's Better Dungeons (Forge/NeoForge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Uma reformulação completa das masmorras do Minecraft como nunca antes. YUNG's Better Dungeons
+                    redesenha as masmorras originais, adicionando também três novas masmorras: Catacumbas, Fortaleza dos
+                    Mortos-Vivos e Cavernas de Aranhas!<br>
                     <b />Versão: YungsBetterDungeons-1.20-Forge-4.0.4.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">YUNG's Better Jungle Temples (Forge/NeoForge)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/881/122/64/64/638311019167898804.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-jungle-temples"
+                    target="_blank" rel="noopener noreferrer">YUNG's Better Jungle Temples (Forge/NeoForge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Uma reformulação completa dos Templos da Selva do Minecraft! O YUNG's Better Jungle Temples
+                    redesenha completamente os templos da selva do zero, apresentando um design, armadilhas,
+                    quebra-cabeças e itens completamente novos!<br>
                     <b />Versão: YungsBetterJungleTemples-1.20-Forge-2.0.5.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/881/107/64/64/638311012004755859.png" alt="Mod1"
+                    class="mod-icon"><a
+                    href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts-forge" target="_blank"
                     rel="noopener noreferrer">YUNG's Better Mineshafts (Forge/NeoForge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Este mod reformula completamente as minas abandonadas tradicionais, transformando-as de linhas retas
+                    e chatas em teias de túneis dinâmicas e variadas. Encontre itens escondidos nos cantos de estações
+                    de trabalho abandonadas ou a céu aberto em um baú em um carrinho de mina.<br>
                     <b />Versão: YungsBetterMineshafts-1.20-Forge-4.0.4.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/881/118/64/64/638311018415562520.png" alt="Mod1"
+                    class="mod-icon"><a
+                    href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses" target="_blank"
                     rel="noopener noreferrer">YUNG's Better Nether Fortresses (Forge/NeoForge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Uma reformulação completa das fortalezas do Nether do Minecraft! As Fortalezas do Nether Melhoradas
+                    de YUNG redesenham completamente as fortalezas do Nether do zero. Comparadas à versão vanilla, as
+                    Fortalezas Melhoradas são muito maiores, mais complexas e mais recompensadoras. Cada fortaleza é
+                    composta por três partes: as redes de pontes, a Fortaleza e os Salões de Lava que se estendem
+                    profundamente no subsolo.<br>
                     <b />Versão: YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">YUNG's Better Ocean Monuments (Forge/NeoForge)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/881/116/64/64/638311017813611458.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments"
+                    target="_blank" rel="noopener noreferrer">YUNG's Better Ocean Monuments (Forge/NeoForge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Uma reformulação completa dos monumentos oceânicos do Minecraft! Os Monumentos Oceânicos Melhores do
+                    YUNG redesenham fundamentalmente os monumentos oceânicos para que sejam muito mais envolventes e
+                    recompensadores. Os Monumentos Melhores são muito maiores do que suas versões originais e têm
+                    layouts completamente aleatórios. Você encontrará itens muito melhores em troca de seus esforços,
+                    incluindo Tridentes e um Coração do Mar!<br>
                     <b />Versão: YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">YUNG's Better Strongholds (Forge/NeoForge)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/881/109/64/64/638311012913164558.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds"
+                    target="_blank" rel="noopener noreferrer">YUNG's Better Strongholds (Forge/NeoForge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Um redesenho completo das fortalezas do Minecraft como nunca antes, tornando-as muito mais complexas
+                    e emocionantes, mas ainda permanecendo fiéis aos temas originais. Há mais de 15 salas diferentes,
+                    vários tipos de túneis e corredores, escadas, armadilhas e até áreas escondidas!<br>
                     <b />Versão: YungsBetterStrongholds-1.20-Forge-4.0.3.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">YUNG's Better Witch Huts (Forge/NeoForge)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/881/129/64/64/638311020526615087.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts"
+                    target="_blank" rel="noopener noreferrer">YUNG's Better Witch Huts (Forge/NeoForge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Uma melhoria para as cabanas de bruxa! Este mod adiciona diversas novas variantes de cabanas que
+                    podem surgir, assim como um círculo de bruxas. As cabanas agora têm designs melhores e itens mais
+                    significativos. As barracas de cerveja podem conter itens que sugerem algumas das receitas de poções
+                    da versão vanilla!<br>
                     <b />Versão: YungsBetterWitchHuts-1.20-Forge-3.0.3.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
-                    rel="noopener noreferrer">YUNG's Bridges (Forge/NeoForge)</a>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/881/134/64/64/638311021928949709.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/yungs-bridges"
+                    target="_blank" rel="noopener noreferrer">YUNG's Bridges (Forge/NeoForge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    YUNG's Bridges é o primeiro mod de Minecraft a adicionar pontes geradas naturalmente ao jogo.
+                    Explore o mundo e descubra mais de 15 tipos diferentes de pontes, cada uma com variantes específicas
+                    para cada bioma!<br>
                     <b />Versão: YungsBridges-1.20-Forge-4.0.3.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/881/132/64/64/638311021194042194.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/yungs-extras" target="_blank"
                     rel="noopener noreferrer">YUNG's Extras (Forge/NeoForge)</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Uma infinidade de estruturas, recursos e conteúdo vanilla+. Este mod é uma coleção de melhorias para
+                    o Minecraft vanilla, cada uma delas pequena demais para seus próprios mods, mas juntas criam um belo
+                    toque final para o seu modpack. É a cereja do bolo para qualquer modpack.<br>
                     <b />Versão: YungsExtras-1.20-Forge-4.0.3.jar
                 </div>
             </li>
-            <li><img src="https://media.forgecdn.net/avatars/thumbnails/91/91/64/64/636244465665632371.png" alt="Mod1"
-                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/cyclic" target="_blank"
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/645/964/64/64/638046643082613341.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/zetter" target="_blank"
                     rel="noopener noreferrer">Zetter - Painting Mod</a>
                 <div class="descricao-mod">
-                    Este mod adiciona uma grande variedade de itens, ferramentas, máquinas, encantamentos e algumas
-                    poções não relacionados.<br>
+                    Zetter é um mod do Minecraft com o objetivo simples de adicionar uma interface de desenho
+                    personalizada para criar pinturas personalizadas no Minecraft<br>
+                    <b />Versão: zetter-1.20.1-0.21.5.jar
+                </div>
+            </li>
+            <li><img src="https://media.forgecdn.net/avatars/thumbnails/645/964/64/64/638046643082613341.png" alt="Mod1"
+                    class="mod-icon"><a href="https://www.curseforge.com/minecraft/mc-mods/zetter" target="_blank"
+                    rel="noopener noreferrer">Zetter - Galerry</a>
+                <div class="descricao-mod">
+                    Zetter Gallery adiciona a função de poder importar pinturas do proprio site do Zetter.<br>
                     <b />Versão: zetter-1.20.1-0.21.5.jar
                 </div>
             </li>
             <!-- Adicione quantos quiser -->
         </ul>
     </section>
+
+    <header id="infos">
+        <section>
+            <h1>
+
+            </h1>
+        </section>
+    </header>
 
     <script>
         document.querySelectorAll('.lista-mods li').forEach(function (item) {
@@ -2113,11 +2276,50 @@
                 item.classList.toggle('expanded');
             });
         });
+
+        document.getElementById('ip-box').addEventListener('click', function () {
+            const ip = document.getElementById('ip-text').textContent;
+            navigator.clipboard.writeText(ip).then(() => {
+                const msg = document.getElementById('copiado-msg');
+                msg.style.display = 'block';
+                setTimeout(() => {
+                    msg.style.display = 'none';
+                }, 2000);
+            });
+        });
+
+        var ip = "mc.meuserver.com"; // Ip do servidor
+        var porta = "25565"; // Porta do servidor
+        var atualizar = 3; // Tempo em segundos para atualizar a contagem
+        var element = "online"; // Id do elemento para mostrar a contagem
+        document.getElementById(element).innerHTML = "Contando..."; // Carregando...
+        setInterval(function () {
+            var request = new XMLHttpRequest();
+            request.onreadystatechange = function () {
+                if (request.readyState == 4 && request.status == 200) {
+                    var response = JSON.parse(request.responseText);
+                    if (!response.err)
+                        // "response.players.online" => mostra quantos players estão online no momento
+                        // "response.players.max" => mostra o maximo de slots do seu servidor
+                        document.getElementById(element).innerHTML = response.players.online + "/" + response.players.max;
+                    else
+                        document.getElementById(element).innerHTML = "0"; // Caso esteja Offline
+                }
+            };
+            request.open("GET", "http://cors.io/?u=http://api.fhrnet.eu/mc/" + ip + "/" + porta + "/newinfo?method=json", true);
+            request.send();
+        }, atualizar * 1000);
+    </script>
     </script>
 
 
 
-
+    <header id="agrade">    </header>
+        <footer>
+            <p>© <img id="personas" src="./arquives/player.png" height="30px"> Kuromori — Desenvolvedor full-stack </p>
+            <p>© <img id="personas" src="./arquives/player2.png" height="30px"> Mobsk — Desenvolvedor Front-End</p>
+            <p>© <img id="personas" src="./arquives/player3.png" height="30px"> BNK128 — Desenvolvedor Front-End</p>
+        </footer>
 
 </body>
 
