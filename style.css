@@ -419,49 +419,38 @@ p {
 }
 
 .mods-wrapper {
-    max-height: 500px;
+    max-height: 1000px;
     /* altura inicial (ajustável) */
     overflow: hidden;
-    transition: max-height 3.5s ease;
+    transition: max-height 0.5s ease;
 }
 
 .mods-wrapper.expandido {
-    max-height: 20000px;
-    transition: max-height 3.5s ease;
+    max-height: 5000px;
     /* altura expandida */
 }
 
-@media (max-width: 768px) {
-    .navigation {
-        flex-direction: column;
-        row-gap: 10px;
-    }
+.discord-fixed-wrapper {
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+}
 
-    .container,
-    .lista-mods,
-    .amor,
-    .fotos {
-        width: 95%;
-        padding: 10px;
-    }
+.discord-fixed-wrapper iframe {
+    width: 700px;
+    height: 500px;
+    border: none;
+    border-radius: 12px;
+}
 
-    .titulo img {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .mod-header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .descricao-mod {
-        font-size: 0.95rem;
-        padding: 10px;
-    }
-
-    .banner p,
-    .container p {
-        font-size: 1em;
+/* Quando a tela for menor que 700px, escala proporcionalmente */
+@media (max-width: 700px) {
+    .discord-fixed-wrapper {
+        transform: scale(calc(100vw / 700));
+        transform-origin: top center;
+        width: 700px;
+        /* Mantém largura original para o scale funcionar */
+        height: 500px;
+        /* Altura original */
     }
 }
