@@ -62,6 +62,68 @@ footer {
     border-top: 1px solid var(--border);
 }
 
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
 .personas {
-    max-width: 10px;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: content-box;
+
+
+}
+
+
+.server-status {
+    position: relative;
+    display: inline-block;
+    font-family: inherit;
+    color: #ff4d4d;
+    /* vermelho para "offline" */
+    font-size: 1em;
+}
+
+/* Exclamação */
+.tooltip {
+
+    margin-left: 6px;
+    cursor: help;
+    font-size: 1.2em;
+}
+
+/* Tooltip flutuante */
+.tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    max-width: 220px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 999;
+    top: 130%;
+    /* aparecer embaixo */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: normal;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Mostrar ao passar o mouse */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }

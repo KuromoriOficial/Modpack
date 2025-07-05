@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="background.css">
     <link rel="stylesheet" href="header.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="button.css" <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
@@ -28,6 +28,14 @@
                     <li><a href="#part" class="navigation_link">Participe</a></li>
                     <li><a href="#modsss" class="navigation_link">Lista de Mods</a></li>
                     <li><a href="#agrade" class="navigation_link">Mais informações</a></li>
+                    <li><a class="navigation_link" style="color: #ffcc00;">Status:</a>
+                        <div class="server-status">
+                            <span class="tooltip">Servidor Offline
+                                <span class="tooltiptext">Servidor será aberto no dia <a style="color: #ffcc00;">
+                                        05/07/2025</a></span>
+                            </span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </header id="home">
@@ -43,9 +51,8 @@
         </video>
     </div>
 
-
     <!-- Banner principal -->
-    <header class="banner" id="facmod">
+    <section class="banner" id="facmod">
         <div class="container">
             <p>Todos os anos, nossa comunidade se reúne para celebrar uma tradição única no Minecraft: o <strong>Evento
                     Wither Storm</strong>. Já estamos na <strong>3ª edição</strong> dessa jornada épica, marcada por um
@@ -64,7 +71,7 @@
                 o mod estiver pronto para retornar... podem ter certeza: <em>a tempestade vai rugir mais forte do que
                     nunca</em>.</p>
         </div>
-    </header>
+    </section>
     <section class="fotos">
         <div class="galeria-imagens">
             <img src="./arquives/foto1.png" alt="Imagem 1">
@@ -74,7 +81,7 @@
         </div>
     </section>
 
-    <header class="banner" id="part">
+    <section class="banner" id="part">
         <div class="container">
             <p>Como dito anteriormente, <strong>todos estão convidados</strong> para embarcar nessa aventura. O evento é
                 <strong>aberto ao público</strong> e pensado para reunir a comunidade em torno de uma experiência única
@@ -86,9 +93,8 @@
                 </a> – seja ela original ou
                 falsificada – contanto que esteja com o <strong>Forge instalado</strong>.</p>
 
-            <!-- <p>Clique aqui para ser redirecionado para a página do ModPack no CurseFor 👉🏻 <u style="color: #1ae1e18d;">FFT76ZjY</u> 👈🏻 ou  (caso não funcione o LINK do modpack do curseforge)-->
-            <p>Você pode baixar nosso ModPack acessando nossa <a style="color: #1ae1e18d"
-                    href="https://legacy.curseforge.com/minecraft/modpacks/modpackfodinhas">página do CurseForge</a> ou
+            <p>Caso tenha CurseForge copie este código 👉🏻 <u style="color: #1ae1e18d;">FFT76ZjY</u> <a>👈🏻 e baixe o
+                    ModPack ou</a>
 
                 <a href="https://www.mediafire.com/file/gw2lintf1tuppom/ModPack2.2.7.rar/file"
                     style="color: #1ae1e18d">baixando
@@ -102,10 +108,10 @@
             </div>
 
         </div>
-    </header>
+    </section>
 
     <!-- Lista de Mods -->
-    <header id="modsss"></header>
+    <section id="modsss"></section>
     <section class="lista-mods">
         <h2>Mods Inclusos</h2>
         <div class="mods-wrapper">
@@ -4127,7 +4133,13 @@
                 <!-- Adicione quantos quiser -->
             </ul>
         </div>
-        <button id="mostrarMaisBtn">Mostrar mais</button>
+
+        <div class="frame">
+
+
+            <button class="custom-btn btn-5" id="mostrarMaisBtn"><span>Mais</span></button>
+        </div>
+
     </section>
 
     <header id="infos">
@@ -4137,73 +4149,6 @@
             </h1>
         </section>
     </header>
-
-    <script>
-
-
-        document.querySelectorAll('.lista-mods li').forEach(function (item) {
-            const link = item.querySelector('a');
-            const desc = item.querySelector('.descricao-mod');
-
-            // Adiciona o botão dentro da descrição, se ainda não existir
-            if (link && desc && !desc.querySelector('.botao-link')) {
-                const button = document.createElement('a');
-                button.href = link.href;
-                button.target = "_blank";
-                button.rel = "noopener noreferrer";
-                button.className = "botao-link";
-                button.textContent = "Ir para página";
-                desc.appendChild(button);
-            }
-
-            // Evento de clique no li (mas ignorando se o clique for em link ou imagem)
-            item.addEventListener('click', function (e) {
-                if (e.target.closest('a') || e.target.tagName.toLowerCase() === 'img') return;
-
-                document.querySelectorAll('.lista-mods li').forEach(function (other) {
-                    if (other !== item) {
-                        other.classList.remove('expanded');
-                    }
-                });
-
-                item.classList.toggle('expanded');
-            });
-        });
-
-        document.getElementById('ip-box').addEventListener('click', function () {
-            const ip = document.getElementById('ip-text').textContent;
-            navigator.clipboard.writeText(ip).then(() => {
-                const msg = document.getElementById('copiado-msg');
-                msg.style.display = 'block';
-                setTimeout(() => {
-                    msg.style.display = 'none';
-                }, 2000);
-            });
-        });
-
-        var ip = "mc.meuserver.com"; // Ip do servidor
-        var porta = "25565"; // Porta do servidor
-        var atualizar = 3; // Tempo em segundos para atualizar a contagem
-        var element = "online"; // Id do elemento para mostrar a contagem
-        document.getElementById(element).innerHTML = "Contando..."; // Carregando...
-        setInterval(function () {
-            var request = new XMLHttpRequest();
-            request.onreadystatechange = function () {
-                if (request.readyState == 4 && request.status == 200) {
-                    var response = JSON.parse(request.responseText);
-                    if (!response.err)
-                        // "response.players.online" => mostra quantos players estão online no momento
-                        // "response.players.max" => mostra o maximo de slots do seu servidor
-                        document.getElementById(element).innerHTML = response.players.online + "/" + response.players.max;
-                    else
-                        document.getElementById(element).innerHTML = "0"; // Caso esteja Offline
-                }
-            };
-            request.open("GET", "http://cors.io/?u=http://api.fhrnet.eu/mc/" + ip + "/" + porta + "/newinfo?method=json", true);
-            request.send();
-        }, atualizar * 1000);
-    </script>
-
 
     <header class="banner" id="discord-section">
         <div class="container">
@@ -4224,22 +4169,16 @@
 
     </header>
     <footer>
-        <p> <img id="personas" src="./arquives/player.png" height="30px"> Kuromori — Desenvolvedor Full-Stack </p>
-        <p> <img id="personas" src="./arquives/player2.png" height="30px"> Mobsk — Desenvolvedor Front-End</p>
-        <p> <img id="personas" src="./arquives/player3.png" height="30px"> BNK128 — Desenvolvedor Front-End</p>
-        <p>©2025 - Versão 1.6.2</p>
+        <p><img class="personas" src="./arquives/player.png"> Kuromori — Desenvolvedor Full-Stack</p>
+        <p><img class="personas" src="./arquives/player2.png"> Mobsk — Desenvolvedor Front-End</p>
+        <p><img class="personas" src="./arquives/player3.png"> BNK128 — Desenvolvedor Front-End</p>
+        <p>©2025 - Versão 1.7.7</p>
     </footer>
 
 
-    <script>
-        const botao = document.getElementById('mostrarMaisBtn');
-        const wrapper = document.querySelector('.mods-wrapper');
 
-        botao.addEventListener('click', () => {
-            wrapper.classList.toggle('expandido');
-            botao.textContent = wrapper.classList.contains('expandido') ? 'Mostrar menos' : 'Mostrar mais';
-        });
-    </script>
+
+    <script src="./app.js"></script>
 
 </body>
 

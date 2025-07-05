@@ -7,6 +7,7 @@ body {
 
 @import url(background.css);
 @import url(header.css);
+@import url(button.css);
 
 /* Banner */
 .banner {
@@ -403,7 +404,6 @@ p {
 #mostrarMaisBtn {
     display: block;
     margin: 20px auto;
-    padding: 10px 20px;
     background-color: #c25afa;
     color: #000;
     font-weight: bold;
@@ -419,14 +419,14 @@ p {
 }
 
 .mods-wrapper {
-    max-height: 1000px;
+    max-height: 900px;
     /* altura inicial (ajustável) */
     overflow: hidden;
     transition: max-height 0.5s ease;
 }
 
 .mods-wrapper.expandido {
-    max-height: 5000px;
+    max-height: 50000px;
     /* altura expandida */
 }
 
@@ -453,4 +453,14 @@ p {
         height: 500px;
         /* Altura original */
     }
+}
+
+.titulo {
+    margin-top: 120px;
+    /* altura do header + espaçamento extra */
+}
+
+body {
+    padding-top: 100px;
+    /* equivalente à altura do seu header fixo */
 }
